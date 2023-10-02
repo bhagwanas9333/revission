@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>datalist tag and output tag</title>
+  </head>
+  <body>
+    <!-- datalist element ,list atribute ,id -->
+    <!-- 
+    <label for="ice-cream-choice">Choose a flavor:</label>
+
+    <input
+      list="ice-cream-flavors"
+      id="ice-cream-choice"
+      name="ice-cream-choice"
+    />
+
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist> -->
+
+    <!-- output  type  value -->
+    <hr />
+   <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+
+    <label for="b">Enter a number:</label>
+    <input type="number" id="b" name="b" value="50" placeholder="Enter a number" />
+    <br />
+
+    <label for="a">Adjust the range:</label>
+    <input type="range" id="a" name="a" value="10" min="0" max="100" />
+    <br />
+
+    <label for="result">Result:</label>
+    <output name="result" for="a b">0</output>
+  </form>
+  </body>
+</html>

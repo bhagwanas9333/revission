@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css box module</title>
+  </head>
+  <style>
+    p,
+    ul {
+      border: 2px solid rebeccapurple;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .block,
+    li {
+      border: 2px solid blue;
+      padding: 0.5em;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .block {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <p>I am a paragraph. A short one.</p>
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+    <!-- 
+        The CSS box model is a fundamental concept that describes how elements are
+        rendered in HTML and how their dimensions are calculated. It consists of
+        four main parts:
+
+
+    Content: This is the actual content of the element, such as text, images, or
+    other HTML elements. The content area is where the element's content is
+    displayed. 
+    
+    
+    Padding: Padding is the space between the content and the element's border.
+    It provides inner spacing within the element. Padding can
+    be set using properties like padding-top, padding-right, padding-bottom, and
+    padding-left.
+    
+    
+    Border: The border surrounds the padding and content. It's
+    typically a line that can be styled with properties like border-width,
+    border-style, and border-color. 
+    
+
+    Margin: The margin is the space outside the
+    border and separates the element from neighboring elements. Margins can be
+    used to control the spacing between elements. You can set margins using
+    properties like margin-top, margin-right, margin-bottom, and margin-left.
+
+
+    +-----------------------------------------+
+    |             Margin (optional)           |
+    |                                         |
+    |  +-----------------------------------+  |
+    |  |             Border                |  |
+    |  |                                   |  |
+    |  |   +---------------------------+   |  |
+    |  |   |         Padding           |   |  |
+    |  |   |                           |   |  |
+    |  |   |  +-------------------+    |   |  |
+    |  |   |  |       Content     |    |   |  |
+    |  |   |  |                   |    |   |  |
+    |  |   |  +-------------------+    |   |  |
+    |  |   |                           |   |  |
+    |  |   +---------------------------+   |  |
+    |  |                                   |  |
+    |  +-----------------------------------+  |
+    |                                         |
+    +-----------------------------------------+ 
+
+
+
+-->
+
+    <p>
+      I am another paragraph. Some of the <span class="block">words</span> have
+      been wrapped in a <span>span element</span>.
+    </p>
+  </body>
+</html>

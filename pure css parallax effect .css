@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+
+  .main {
+    display: flex;
+  }
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-1 {
+  flex-direction: column;
+  background-image: url("pexels-photo-866398.jpeg");
+  width: 100%;
+  height: 100vh;
+}
+.bg-2 {
+  flex-direction: column;
+  background-image: url("pexels-photo-car.jpeg");
+  width: 100%;
+  height: 550px;
+}
+.bg-3 {
+  flex-direction: column;
+  background-image: url("pexels-photo-girl.jpeg");
+  width: 100%;
+  height: 100vh;
+}
+.bg-4 {
+  background-image: url("pexels-photo.jpeg");
+  width: 100%;
+  height: 100vh;
+}

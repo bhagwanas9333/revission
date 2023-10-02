@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Effect</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+      }
+      .parallax-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .parallax-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .parallax-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax-container">
+      <div class="parallax-section" style="background-image: url('pexels-photo-866398.jpeg')">
+        <div class="parallax-content">
+          <h1>Parallax Section 1</h1>
+          <p>Scroll down to see the effect</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax-section" style="background-image: url('pexels-photo-car.jpeg')">
+        <div class="parallax-content">
+          <h1>Parallax Section 2</h1>
+          <p>This is another parallax section</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax-section" style="background-image: url('pexels-photo-girl.jpeg')">
+        <div class="parallax-content">
+          <h1>Parallax Section 3</h1>
+          <p>Scrolling creates the effect</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let offset = window.pageYOffset;
+        document
+          .querySelectorAll(".parallax-section")
+          .forEach(function (element, i) {
+            element.style.backgroundPositionY = offset * 0.5 - i * 500 + "px";
+          });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pure css parallax effect</title>
+    <link rel="stylesheet" href="./pure css parallax effect .css">
+  </head>
+  <body>
+   <div class="main">
+    <div class="bg-1">
+      <h1>Parallax Effect!</h1>
+    </div>
+
+    <div class="bg-2">
+      <h1>LIKEE ?!</h1>
+    </div>
+
+    <div class="bg-3">
+      <h1>IT'S VERY COOL! !</h1>
+    </div>
+
+    <div class="bg-4">
+      <h1>Yahaaaa !!!</h1>
+    </div>
+
+    <div class="bg-1">
+      <h1>SUPER ....</h1>
+    </div>
+   </div>
+
+  </body>
+</html> -->

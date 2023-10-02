@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient in css</title>
+  </head>
+  <style>
+    .div1 {
+      height: 50vh;
+      background: linear-gradient(#e66465, #9198e5);
+    }
+    .div2 {
+      height: 50vh;
+      background: linear-gradient(0.75turn, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    .div3 {
+      height: 50vh;
+      background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    }
+    .div3 {
+      height: 50vh;
+      background: linear-gradient(
+          rgba(255, 0, 0, 0.8),
+          rgba(255, 0, 0, 0) 70.71%
+        ),
+        linear-gradient(rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    }
+    .div4 {
+      height: 50vh;
+      background: linear-gradient(90deg, red 20%, blue 50% 100%);
+    }
+    .div5 {
+      height: 50vh;
+      background: linear-gradient(0.3turn, red, 20%, blue);
+    }
+    .div6 {
+      height: 50vh;
+      background: linear-gradient(
+        to right,
+        red 20%,
+        orange 20% 40%,
+        yellow 30% 30%,
+        green 60% 80%,
+        blue 80%
+      );
+    }
+    .div7 {
+      height: 50vh;
+      background-image: repeating-linear-gradient(red, yellow 30px, green 50px);
+    }
+    .div8 {
+      height: 50vh;
+      background-image: radial-gradient(red, yellow, green, blue);
+    }
+    .div9 {
+      height: 50vh;
+      background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+  </style>
+  
+  <body>
+    <div class="div1"></div>
+    <hr />
+    <div class="div2"></div>
+    <hr />
+    <div class="div3"></div>
+    <hr />
+    <div class="div4"></div>
+    <hr />
+    <div class="div5"></div>
+    <hr />
+    <div class="div6"></div>
+    <hr />
+    <div class="div7"></div>
+    <hr />
+    <div class="div8"></div>
+    <hr />
+    <div class="div9"></div>
+  </body>
+</html>
